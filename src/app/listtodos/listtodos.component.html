@@ -1,0 +1,26 @@
+<table border="1">
+	<caption>My task</caption>
+<thead>
+
+	<tr>
+        <th>DESCRIOPTION</th>
+	<th>COMPLETED ?</th>
+	<th>TARGET DATE </th>
+	</tr>
+</thead>
+	
+<tbody>
+
+
+<tr *ngFor="let data of listdata">
+		<!-- <td>{{data.id}}</td> -->
+		<td>{{data.description}}</td>
+		<td>{{data.iscompleted}}</td>
+		<td>{{data.targetdate | date | uppercase}}</td>
+	</tr>
+
+</tbody>
+
+
+	
+</table>

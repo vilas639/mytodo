@@ -1,0 +1,12 @@
+
+
+<div>
+<h1>username</h1> <input name="username" type="text" [(ngModel)]="username1" />
+<h1>password</h1> <input name="password" type="password" [(ngModel)]="password"/>
+
+<button (click)=handlebutton()>Submit</button>
+
+<h1>display {{username1}}</h1>
+
+<small *ngIf='isvalid'>{{errormessgae}}</small>
+</div>
