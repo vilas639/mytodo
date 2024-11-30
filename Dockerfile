@@ -4,6 +4,9 @@ FROM node:18 AS build
 # Set the working directory
 WORKDIR /app
 
+# Install the latest npm version
+RUN npm install -g npm@latest
+
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
